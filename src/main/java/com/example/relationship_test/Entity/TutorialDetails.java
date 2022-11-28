@@ -43,6 +43,14 @@ public class TutorialDetails {
     @JoinColumn(name = "tutorial_id") // We set the shared primary key column
     private Tutorial tutorial;
 
+    public Tutorial getTutorial() {
+        return tutorial;
+    }
+
+    public void setTutorial(Tutorial tutorial) {
+        this.tutorial = tutorial;
+    }
+
     public TutorialDetails(){}
     public TutorialDetails(String createdBy){
         this.createdBy = createdBy;
